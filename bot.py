@@ -30,7 +30,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "I'am OGGY BHAI File Host"
+    return "I'AM OGGY BHAI FILE HOST"
 
 def run_flask():
   # Make sure to run on port provided by environment or default to 8080
@@ -45,11 +45,11 @@ def keep_alive():
 # --- End Flask Keep Alive ---
 
 # --- Configuration ---
-TOKEN = '7938482334:AAEjJiVx8lfGmMEx9M37I3C3a-JMdvUuh9Y' # Replace with your actual token
-OWNER_ID = 8018964088 # Replace with your Owner ID
-ADMIN_ID = 8018964088 # Replace with your Admin ID (can be same as Owner)
+TOKEN = '8438684280:AAFRH1NMZUqyj1G9rKob5KbYk93f6c5H_jg' # Replace with your actual token
+OWNER_ID = 6820574331 # Replace with your Owner ID
+ADMIN_ID = 5535235573 # Replace with your Admin ID (can be same as Owner)
 YOUR_USERNAME = 'BAN8T' # Replace with your Telegram username (without the @)
-UPDATE_CHANNEL = 'https://t.me/BGMI_OWNER00' # Replace with your update channel link
+UPDATE_CHANNEL = 'https://t.me/BAN8T' # Replace with your update channel link
 
 # Folder setup - using absolute paths
 BASE_DIR = os.path.abspath(os.path.dirname(__file__)) # Get script's directory
@@ -58,8 +58,8 @@ IROTECH_DIR = os.path.join(BASE_DIR, 'inf') # Assuming this name is intentional
 DATABASE_PATH = os.path.join(IROTECH_DIR, 'bot_data.db')
 
 # File upload limits
-FREE_USER_LIMIT = 3
-SUBSCRIBED_USER_LIMIT = 15 # Changed from 10 to 15
+FREE_USER_LIMIT = 10
+SUBSCRIBED_USER_LIMIT = 50 # Changed from 10 to 15
 ADMIN_LIMIT = 999       # Changed from 50 to 999
 OWNER_LIMIT = float('inf') # Changed from 999 to infinity
 # FREE_MODE_LIMIT = 3 # Removed as free_mode is removed
@@ -426,7 +426,7 @@ def run_script(script_path, script_owner_id, user_folder, file_name, message_obj
             bot_scripts[script_key] = {
                 'process': process, 'log_file': log_file, 'file_name': file_name,
                 'chat_id': message_obj_for_reply.chat.id, # Chat ID for potential future direct replies from script, defaults to admin/triggering user
-                'script_owner_id': script_owner_id, # Actual owner of the script
+                'script_owner_id': script_owner_id, # Actual of the script
                 'start_time': datetime.now(), 'user_folder': user_folder, 'type': 'py', 'script_key': script_key
             }
             bot.reply_to(message_obj_for_reply, f"✅ Python script '{file_name}' started! (PID: {process.pid}) (For User: {script_owner_id})")
