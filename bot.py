@@ -44,7 +44,7 @@ def keep_alive():
     print("Flask Keep-Alive server started.")
 
 # --- Configuration ---
-TOKEN = '7938482334:AAEjJiVx8lfGmMEx9M37I3C3a-JMdvUuh9Y'  # replace if needed
+TOKEN = '7938482334:AAF82rRWiput8sccOSeptJ0NRK5ucaluBFQ'  # replace if needed
 OWNER_ID = 8018964088
 ADMIN_ID = 8018964088
 YOUR_USERNAME = 'BAN8T'
